@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+  <meta name="referrer" content="no-referrer">
+  <title>xgplayer</title>
+  <style type="text/css">
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mse"></div>
+  <link rel="stylesheet" href="https://unpkg.byted-static.com/xgplayer/3.0.10/dist/index.min.css" />
+  <script charset="utf-8" src="https://unpkg.byted-static.com/xgplayer/3.0.10/dist/index.min.js"></script>
+
+  <script charset="utf-8" src="https://unpkg.byted-static.com/xgplayer-flv/3.0.10/dist/index.min.js"></script>
+  <script>
+    const config = {
+      "id": "mse",
+      "url": "https://live.bbapcall.com/live/hd-en-2-3827879.flv?txSecret=5e8245ea20c0a193c2106a96bfdc38fe&txTime=675E7F3D",
+      "playsinline": false,
+      "poster": "//lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/byted-player-videos/1.0.0/poster.jpg",
+      "plugins": [],
+      "isLive": true,
+      "autoplay": true,
+      "fluid": true,
+      "volume": 1,
+      "pip": true
+    }
+    config.plugins.push(FlvPlayer)
+    let player = new Player(config)
+
+  </script>
+</body>
+
+</html>

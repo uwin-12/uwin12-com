@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.byted-static.com/xgplayer/3.0.10/dist/index.min.css" />
   <title>Document</title>
 </head>
 
@@ -73,23 +74,6 @@
               </span>
             </a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link bg-secondary position-relative rounded-pill" href="#">
-              <span class="badge">
-                <i class="bi bi-bullseye fs-5">Soccer</i>
-              </span>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light-subtle">99+
-              </span>
-            </a>
-          </li>
-          <li class="nav-item position-relative me-4">
-            <a class="nav-link" href="#">
-            </a>
-          </li>
-          <li class="nav-item position-relative me-4">
-            <a class="nav-link" href="#">
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -100,52 +84,40 @@
     <div class="side-list col-xl-2 d-none d-xl-block">
       <ul class="list-group list-group-flush">
         <!-- Popular 分组 -->
-        <li class="list-group-item border-0 popular">
-          <strong>
-            <h5>Popular</h5>
-          </strong>
-          <ul class="list-group list-group-flush mt-2">
+        <li class="list-group-item border-0 popular px-0">
+          <b class="bi bi-star fs-5">
+            Popular
+          </b>
+          <ul class="list-group list-group-flush mt-2 fs-6">
             <!-- 运动项 -->
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 pt-0">
               Football
               <ul class="list-group list-group-flush mt-2">
                 <!-- 联赛项 -->
-                <li class="list-group-item border-0">
+                <li class="list-group-item border-0 pb-2 pt-0 px-0">
                   <img src="https://cdn.oddspedia.com/images/leagues/small/627.png" class="me-2" style="width: 20px;">
                   Premier League
                 </li>
-                <li class="list-group-item border-0">
-                  <img src="https://cdn.oddspedia.com/images/leagues/small/2@2x.png" class="me-2" style="width: 20px;">
-                  La Liga
-                </li>
               </ul>
-            </li>
-            <li class="list-group-item border-0">
-              Basketball
             </li>
           </ul>
         </li>
         <!-- 普通分组 -->
-        <li class="list-group-item border-0 normal">
-          Normal
-          <ul class="list-group list-group-flush mt-2">
+        <li class="list-group-item border-0 popular px-0">
+          <b class="bi bi-flag fs-5">
+            A-Z
+          </b>
+          <ul class="list-group list-group-flush mt-2 fs-6">
             <!-- 运动项 -->
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0 pt-0">
               Football
               <ul class="list-group list-group-flush mt-2">
                 <!-- 联赛项 -->
-                <li class="list-group-item border-0">
+                <li class="list-group-item border-0 pb-2 pt-0 px-0">
                   <img src="https://cdn.oddspedia.com/images/leagues/small/627.png" class="me-2" style="width: 20px;">
                   Premier League
                 </li>
-                <li class="list-group-item border-0">
-                  <img src="https://cdn.oddspedia.com/images/leagues/small/2@2x.png" class="me-2" style="width: 20px;">
-                  La Liga
-                </li>
               </ul>
-            </li>
-            <li class="list-group-item border-0">
-              Basketball
             </li>
           </ul>
         </li>
@@ -155,39 +127,48 @@
     <div class="matchlist bg-danger col-xl-6 col-sm-12 mx-2 p-0">
       <nav class="navbar navbar-expand-lg bg-body-tertiary sport p-0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="bi bi-browser-chrome me-2"></i><b>FOOTBALL</b></a>
-          <a class="navbar-brand ms-auto " href="#">Power by <img
+          <a class="navbar-brand fs-4" href="#"><i class="bi bi-browser-chrome me-2"></i><b>FOOTBALL</b></a>
+          <a class="navbar-brand ms-auto fs-6" href="#">Power by <img
               src="https://cdn.oddspedia.com/images/bookmakers/dark-back/120x48/stake-com.png" alt="STAKE"
               class="img-fluid me-2" style="height: 24px; object-fit: contain;">
-            <span class="rounded-circle bg-danger p-2 d-inline-flex align-items-center justify-content-center">
+            <span class="rounded-circle bg-danger p-2 d-inline-flex align-items-center justify-content-center fs-6">
               <i class="bi bi-gift text-white"></i>
             </span>
           </a>
-          <a class="navbar-brand" href="#">SEE ALL<i class="bi bi-arrow-right ms-2"></i></a>
+          <a class="navbar-brand fs-6 m-0" href="#">SEE ALL<i class="bi bi-arrow-right ms-2"></i></a>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg bg-light-subtle league p-0">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="bi bi-browser-chrome me-2 fs-6"></i><b>SPAIN</b></a>
-          <a class="navbar-brand me-auto " href="#">La Liga</a>
+          <a class="navbar-brand fs-6 me-2" href="#"><i class="bi bi-browser-chrome me-2"></i>SPAIN</a>
+          <a class="navbar-brand me-auto fs-6" href="#">LA LIGA</a>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg bg-secondary match p-0">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">23:59</a>
-          <a class="navbar-brand" href="#">23:59</a>
-          <a class="navbar-brand  me-auto" href="#"><i class="bi bi-browser-chrome fs-6"></i><b>SPAIN</b></a>
-          <a class="navbar-brand" href="#">SEE ALL<i class="bi bi-arrow-right ms-2"></i></a>
+      <nav class="navbar navbar-expand-lg bg-secondary match">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand fs-6 m-3 p-0" href="#">23:59</a>
+          <a class="navbar-brand fs-6 flex-fill m-0 p-0" href="#">
+            <div class="d-flex justify-content-between mb-1">
+              <div><i class="bi bi-browser-chrome me-2"></i>Arsenal</div>
+              <div>2</div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><i class="bi bi-browser-chrome me-2"></i>Arsenal</div>
+              <div>2</div>
+            </div>
+          </a>
+          <a class="navbar-brand fs-6 mx-3 p-0" href="#"><i class="bi bi-star"></i></a>
         </div>
       </nav>
     </div>
-    <!-- 右侧广告 -->
+    <!-- 右侧播放区域 -->
     <div class="ad bg-warning col-xl-4 d-none d-xl-block">
-      3
+      <iframe src="xgplayer.html" frameborder="0" style="width: 100%; height: 100%; border: none; overflow: hidden;"
+        allowfullscreen>
+      </iframe>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 
 </html>
